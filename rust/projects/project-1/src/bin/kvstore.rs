@@ -27,7 +27,7 @@ fn main() {
             let store = KvStore::new();
             match store.get(args[2].clone()) {
                 Some(value) => println!("{}", value),
-                None => println!("unimplemented"),
+                None => println!("unimplemented"),  // todo 改为用panic!
             }
         }
         "rm" => {
